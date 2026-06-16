@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City List</title>
+    <script src="{% static 'js/cities.js' %}"></script>
+</head>
+<body>
+    <h1>City List</h1>
+    <ul id="cityList">
+        <!-- نام شهرها اینجا اضافه می‌شوند -->
+    </ul>
+
+    <div id="weatherInfo" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; display: none;">
+        <h3>Weather Information</h3>
+        <p><strong>City:</strong> <span id="cityName"></span></p>
+        <p><strong>Temperature:</strong> <span id="temperature"></span>°C</p>
+    </div>
+</body>
+</html>
